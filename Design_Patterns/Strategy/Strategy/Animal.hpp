@@ -8,6 +8,16 @@
 #ifndef Animal_hpp
 #define Animal_hpp
 
-#include <stdio.h>
+#include <iostream>
+#include "FlyInterface.hpp"
+using namespace std;
+
+class Animal{
+    Ifly *flyProperty;
+public:
+    Animal(Ifly *ptr=nullptr): flyProperty(ptr){};
+    void setFlyInterface(Ifly *ptr); //Can change interface at runtime
+    void fly();
+};
 
 #endif /* Animal_hpp */

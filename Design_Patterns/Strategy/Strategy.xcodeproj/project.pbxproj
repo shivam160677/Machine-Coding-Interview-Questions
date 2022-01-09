@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4044B2E8278AFC620070A593 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4044B2E7278AFC620070A593 /* main.cpp */; };
+		4044B2F0278AFD610070A593 /* Animal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4044B2EE278AFD610070A593 /* Animal.cpp */; };
+		4044B2F9278AFEBF0070A593 /* FlyInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4044B2F7278AFEBF0070A593 /* FlyInterface.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		4044B2E4278AFC620070A593 /* Strategy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Strategy; sourceTree = BUILT_PRODUCTS_DIR; };
 		4044B2E7278AFC620070A593 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4044B2EE278AFD610070A593 /* Animal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Animal.cpp; sourceTree = "<group>"; };
+		4044B2EF278AFD610070A593 /* Animal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Animal.hpp; sourceTree = "<group>"; };
+		4044B2F7278AFEBF0070A593 /* FlyInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FlyInterface.cpp; sourceTree = "<group>"; };
+		4044B2F8278AFEBF0070A593 /* FlyInterface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FlyInterface.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				4044B2E7278AFC620070A593 /* main.cpp */,
+				4044B2F7278AFEBF0070A593 /* FlyInterface.cpp */,
+				4044B2F8278AFEBF0070A593 /* FlyInterface.hpp */,
+				4044B2EE278AFD610070A593 /* Animal.cpp */,
+				4044B2EF278AFD610070A593 /* Animal.hpp */,
 			);
 			path = Strategy;
 			sourceTree = "<group>";
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4044B2F9278AFEBF0070A593 /* FlyInterface.cpp in Sources */,
 				4044B2E8278AFC620070A593 /* main.cpp in Sources */,
+				4044B2F0278AFD610070A593 /* Animal.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

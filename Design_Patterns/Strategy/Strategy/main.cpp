@@ -6,9 +6,16 @@
 //
 
 #include <iostream>
+#include "Animal.hpp"
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    Animal dog;
+    dog.setFlyInterface(new CantFly);
+    dog.fly();
+    
+    Animal parrot;
+    parrot.setFlyInterface(new ItFlys);
+    parrot.fly();
     return 0;
 }

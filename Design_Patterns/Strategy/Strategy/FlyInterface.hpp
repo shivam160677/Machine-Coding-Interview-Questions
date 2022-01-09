@@ -8,6 +8,23 @@
 #ifndef FlyInterface_hpp
 #define FlyInterface_hpp
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+//Abstract class
+class Ifly{
+public:
+    virtual void Fly()=0; //pure virtual function
+};
+
+class ItFlys: public Ifly{
+public:
+    void Fly();
+};
+
+class CantFly: public Ifly{
+public:
+    void Fly();
+};
 
 #endif /* FlyInterface_hpp */
