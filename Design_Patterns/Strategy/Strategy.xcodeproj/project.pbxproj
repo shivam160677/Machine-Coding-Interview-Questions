@@ -3,18 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		404279DE26F1935C007D3CC0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 404279DD26F1935C007D3CC0 /* main.cpp */; };
-		404279EB26F1FAC7007D3CC0 /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 404279E926F1FAC7007D3CC0 /* Board.cpp */; };
-		404279F026F1FAFF007D3CC0 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 404279EE26F1FAFF007D3CC0 /* Player.cpp */; };
-		40427A0D26F5ACA2007D3CC0 /* SnakeLadderService.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 40427A0B26F5ACA2007D3CC0 /* SnakeLadderService.cpp */; };
+		4044B2E8278AFC620070A593 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4044B2E7278AFC620070A593 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		404279D826F1935C007D3CC0 /* CopyFiles */ = {
+		4044B2E2278AFC620070A593 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,18 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		404279DA26F1935C007D3CC0 /* SnakeLadderGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SnakeLadderGame; sourceTree = BUILT_PRODUCTS_DIR; };
-		404279DD26F1935C007D3CC0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		404279E926F1FAC7007D3CC0 /* Board.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Board.cpp; sourceTree = "<group>"; };
-		404279EA26F1FAC7007D3CC0 /* Board.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Board.hpp; sourceTree = "<group>"; };
-		404279EE26F1FAFF007D3CC0 /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		404279EF26F1FAFF007D3CC0 /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
-		40427A0B26F5ACA2007D3CC0 /* SnakeLadderService.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SnakeLadderService.cpp; sourceTree = "<group>"; };
-		40427A0C26F5ACA2007D3CC0 /* SnakeLadderService.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SnakeLadderService.hpp; sourceTree = "<group>"; };
+		4044B2E4278AFC620070A593 /* Strategy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Strategy; sourceTree = BUILT_PRODUCTS_DIR; };
+		4044B2E7278AFC620070A593 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		404279D726F1935C007D3CC0 /* Frameworks */ = {
+		4044B2E1278AFC620070A593 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,109 +38,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		404279D126F1935C007D3CC0 = {
+		4044B2DB278AFC620070A593 = {
 			isa = PBXGroup;
 			children = (
-				404279DC26F1935C007D3CC0 /* SnakeLadderGame */,
-				404279DB26F1935C007D3CC0 /* Products */,
+				4044B2E6278AFC620070A593 /* Strategy */,
+				4044B2E5278AFC620070A593 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		404279DB26F1935C007D3CC0 /* Products */ = {
+		4044B2E5278AFC620070A593 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				404279DA26F1935C007D3CC0 /* SnakeLadderGame */,
+				4044B2E4278AFC620070A593 /* Strategy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		404279DC26F1935C007D3CC0 /* SnakeLadderGame */ = {
+		4044B2E6278AFC620070A593 /* Strategy */ = {
 			isa = PBXGroup;
 			children = (
-				404279DD26F1935C007D3CC0 /* main.cpp */,
-				404279E926F1FAC7007D3CC0 /* Board.cpp */,
-				404279EA26F1FAC7007D3CC0 /* Board.hpp */,
-				404279EE26F1FAFF007D3CC0 /* Player.cpp */,
-				404279EF26F1FAFF007D3CC0 /* Player.hpp */,
-				40427A0B26F5ACA2007D3CC0 /* SnakeLadderService.cpp */,
-				40427A0C26F5ACA2007D3CC0 /* SnakeLadderService.hpp */,
+				4044B2E7278AFC620070A593 /* main.cpp */,
 			);
-			path = SnakeLadderGame;
+			path = Strategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		404279D926F1935C007D3CC0 /* SnakeLadderGame */ = {
+		4044B2E3278AFC620070A593 /* Strategy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 404279E126F1935C007D3CC0 /* Build configuration list for PBXNativeTarget "SnakeLadderGame" */;
+			buildConfigurationList = 4044B2EB278AFC620070A593 /* Build configuration list for PBXNativeTarget "Strategy" */;
 			buildPhases = (
-				404279D626F1935C007D3CC0 /* Sources */,
-				404279D726F1935C007D3CC0 /* Frameworks */,
-				404279D826F1935C007D3CC0 /* CopyFiles */,
+				4044B2E0278AFC620070A593 /* Sources */,
+				4044B2E1278AFC620070A593 /* Frameworks */,
+				4044B2E2278AFC620070A593 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SnakeLadderGame;
-			productName = SnakeLadderGame;
-			productReference = 404279DA26F1935C007D3CC0 /* SnakeLadderGame */;
+			name = Strategy;
+			productName = Strategy;
+			productReference = 4044B2E4278AFC620070A593 /* Strategy */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		404279D226F1935C007D3CC0 /* Project object */ = {
+		4044B2DC278AFC620070A593 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1230;
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					404279D926F1935C007D3CC0 = {
-						CreatedOnToolsVersion = 12.3;
+					4044B2E3278AFC620070A593 = {
+						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 404279D526F1935C007D3CC0 /* Build configuration list for PBXProject "SnakeLadderGame" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 4044B2DF278AFC620070A593 /* Build configuration list for PBXProject "Strategy" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 404279D126F1935C007D3CC0;
-			productRefGroup = 404279DB26F1935C007D3CC0 /* Products */;
+			mainGroup = 4044B2DB278AFC620070A593;
+			productRefGroup = 4044B2E5278AFC620070A593 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				404279D926F1935C007D3CC0 /* SnakeLadderGame */,
+				4044B2E3278AFC620070A593 /* Strategy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		404279D626F1935C007D3CC0 /* Sources */ = {
+		4044B2E0278AFC620070A593 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				404279EB26F1FAC7007D3CC0 /* Board.cpp in Sources */,
-				404279DE26F1935C007D3CC0 /* main.cpp in Sources */,
-				40427A0D26F5ACA2007D3CC0 /* SnakeLadderService.cpp in Sources */,
-				404279F026F1FAFF007D3CC0 /* Player.cpp in Sources */,
+				4044B2E8278AFC620070A593 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		404279DF26F1935C007D3CC0 /* Debug */ = {
+		4044B2E9278AFC620070A593 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -194,7 +177,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -202,13 +185,13 @@
 			};
 			name = Debug;
 		};
-		404279E026F1935C007D3CC0 /* Release */ = {
+		4044B2EA278AFC620070A593 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -247,14 +230,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		404279E226F1935C007D3CC0 /* Debug */ = {
+		4044B2EC278AFC620070A593 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -262,7 +245,7 @@
 			};
 			name = Debug;
 		};
-		404279E326F1935C007D3CC0 /* Release */ = {
+		4044B2ED278AFC620070A593 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -273,25 +256,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		404279D526F1935C007D3CC0 /* Build configuration list for PBXProject "SnakeLadderGame" */ = {
+		4044B2DF278AFC620070A593 /* Build configuration list for PBXProject "Strategy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				404279DF26F1935C007D3CC0 /* Debug */,
-				404279E026F1935C007D3CC0 /* Release */,
+				4044B2E9278AFC620070A593 /* Debug */,
+				4044B2EA278AFC620070A593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		404279E126F1935C007D3CC0 /* Build configuration list for PBXNativeTarget "SnakeLadderGame" */ = {
+		4044B2EB278AFC620070A593 /* Build configuration list for PBXNativeTarget "Strategy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				404279E226F1935C007D3CC0 /* Debug */,
-				404279E326F1935C007D3CC0 /* Release */,
+				4044B2EC278AFC620070A593 /* Debug */,
+				4044B2ED278AFC620070A593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 404279D226F1935C007D3CC0 /* Project object */;
+	rootObject = 4044B2DC278AFC620070A593 /* Project object */;
 }
