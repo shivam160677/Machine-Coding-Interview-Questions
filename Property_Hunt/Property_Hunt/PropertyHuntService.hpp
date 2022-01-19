@@ -9,6 +9,7 @@
 #define PropertyHuntService_hpp
 
 #include <iostream>
+#include <fstream>
 #include <unordered_map>
 #include "Property.hpp"
 #include "User.hpp"
@@ -25,14 +26,14 @@ class PropertyHuntService{
     PropertyHuntService();
 public:
     static PropertyHuntService* getPropertyHuntServiceInstance();
-    void processUserInput(string op);
+    void processUserInput(fstream &f1, fstream &f2, string op);
     bool registerUser(string userName);
     bool registerProperty(string userName, string propertyTitle, string location, int price, AvailablilityType availabilityType, int size, int noOfRooms);
     
     vector<Property> SearchProperties();
     bool shortListProperty(string userName, int propertyId);
     vector<Property> viewShortListed(string userName);
-    void displayProperties(vector<Property> prop);
+    void displayProperties(vector<Property> prop, fstream &f2);
 };
 
 #endif /* PropertyHuntService_hpp */

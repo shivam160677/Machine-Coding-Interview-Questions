@@ -50,55 +50,56 @@ vector<Property> PropertyHuntService::viewShortListed(string userName){
     return result;
 }
 
-void PropertyHuntService::processUserInput(string op){
+void PropertyHuntService::processUserInput(fstream &f1, fstream &f2, string op){
     if(op=="Register User"){
         string userName;
-        getline(cin, userName);
+        getline(f1, userName);
         registerUser(userName);
     }
     else if(op=="Register Property"){
         string userName;
-        cout<<"Enter UserName"<<endl;
-        getline(cin, userName);
+        getline(f1, userName);
         string propertyTitle;
-        cout<<"Enter Title"<<endl;
-        getline(cin, propertyTitle);
+//        cout<<"Enter Title"<<endl;
+        getline(f1, propertyTitle);
         string location;
-        cout<<"Enter Location"<<endl;
-        getline(cin, location);
+//        cout<<"Enter Location"<<endl;
+        getline(f1, location);
         int price;
-        cout<<"Enter Price"<<endl;
-        cin>>price;
+//        cout<<"Enter Price"<<endl;
+        f1>>price;
         string propType;
         AvailablilityType atype;
-        cout<<"Enter Type(RENT/SALE)"<<endl;
-        getline(cin, propType);
+//        cout<<"Enter Type(RENT/SALE)"<<endl;
+        f1>>propType;
         if(propType=="RENT")
             atype=RENT;
         else
             atype=SALE;
         int size;
-        cout<<"Enter size"<<endl;
-        cin>>size;
+//        cout<<"Enter size"<<endl;
+        f1>>size;
         int noOfRooms;
-        cout<<"Enter number of rooms"<<endl;
-        cin>>noOfRooms;
+//        cout<<"Enter number of rooms"<<endl;
+        f1>>noOfRooms;
         registerProperty(userName, propertyTitle, location, price, atype, size, noOfRooms);
+        f1.ignore();
     }
     else if(op=="ShortList")
     {
         string userName;
-        getline(cin, userName);
+        getline(f1, userName);
         int propId;
-        cin>>propId;
+        f1>>propId;
         shortListProperty(userName, propId);
+        f1.ignore();
     }
     else if(op=="View ShortList")
     {
         string userName;
-        getline(cin, userName);
+        getline(f1, userName);
         vector<Property>result=viewShortListed(userName);
-        displayProperties(result);
+        displayProperties(result, f2);
     }
     else if(op=="Search")
     {
@@ -107,27 +108,28 @@ void PropertyHuntService::processUserInput(string op){
             propertyList.push_back(it.second);
         }
         ISearch *ptr= new BasicSearch(propertyList);
-        cout<<"Enter Price Filter(Y/N)";
+//        cout<<"Enter Price Filter(Y/N)";
         char priceFilter;
         int lowPrice, highPrice;
-        cin>>priceFilter;
+        f1>>priceFilter;
         if(priceFilter=='Y')
         {
-            cin>>lowPrice>>highPrice;
+            f1>>lowPrice>>highPrice;
             ptr=new PriceSearchWrapper(ptr, lowPrice, highPrice);
         }
         
-        cout<<"Enter Location Filter(Y/N)";
+//        cout<<"Enter Location Filter(Y/N)";
         string loc;
         char locFilter;
-        cin>>locFilter;
+        f1>>locFilter;
         if(locFilter=='Y')
         {
-            cin>>loc;
+            f1>>loc;
             ptr=new LocationSearchWrapper(ptr, loc);
         }
         vector<Property>ans=ptr->Search();
-        displayProperties(ans);
+        displayProperties(ans, f2);
+        f1.ignore();
     }
     else
     {
@@ -135,15 +137,14 @@ void PropertyHuntService::processUserInput(string op){
     }
 }
 
-void PropertyHuntService::displayProperties(vector<Property>prop){
-    cout<<"Id  "<<"Title  "<<"Location  "<<"Price  "<<"Size  "<<"Rooms  "<<"AvailableFor  ";
+void PropertyHuntService::displayProperties(vector<Property>prop, fstream &f2){
     for(int i=0;i<prop.size();i++){
-        cout<<prop[i].getPropertyId()<<"  "
+        f2<<prop[i].getPropertyId()<<"  "
         <<prop[i].getPropertyTitle()<<"  "
         <<prop[i].getLocation()<<"  "
         <<prop[i].getSize()<<"  "
         <<prop[i].getNoOfRooms()<<"  "
-        <<prop[i].getAvailablityType()<<"  ";
+        <<prop[i].getAvailablityType()<<"  "<<endl;
     }
 }
 

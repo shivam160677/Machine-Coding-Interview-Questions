@@ -1,0 +1,19 @@
+Register User
+Shivam Garg
+Register Property
+Shivam Garg
+Atulyam House
+Uttam Nagar
+40000
+SELL
+300
+2
+ShortList
+Shivam Garg
+0
+View ShortList
+Shivam Garg
+Search
+N
+N
+X

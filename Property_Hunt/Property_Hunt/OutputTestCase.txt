@@ -1,0 +1,3 @@
+Id  Title  Location  Price  Size  Rooms  AvailableFor  
+0  Atulyam House  Uttam Nagar  300  2  1  
+0  Atulyam House  Uttam Nagar  300  2  1  
